@@ -26,6 +26,17 @@ int main() {
           cout << "YES" << endl;
           return 0;
         }
+	Just need to check a[v] == 0  to break the loop
+                bool check = true;
+                for (int v = p; v < n; v += k)
+                    if (a[v] == 0) {
+                        check = false;
+                        break;
+                    }
+                if (check) {
+                    cout << "YES";
+                    return 0;
+                }
         **/
 			}
 		}
